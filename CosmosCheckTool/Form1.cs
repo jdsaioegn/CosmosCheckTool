@@ -39,5 +39,30 @@ namespace CosmosCheckTool
             IniParser.Model.IniData data = parser.ReadFile("環境設定.ini", Encoding.UTF8);
             OutPath = data["保存場所"]["Path"];
         }
+
+        /// <summary>
+        /// ボタン押下時発生イベント
+        /// </summary>
+        /// <param name="sender">イベント発生元オブジェクト情報</param>
+        /// <param name="e">イベント情報</param>
+        private void ButtonClick(object sender, EventArgs e)
+        {
+            // ボタン押下発生元オブジェクトのテキストプロパティによって処理を決定
+            switch (((Button)sender).Text)
+            {
+                // データ作成ボタン押下
+                case "データ作成":
+                    break;
+                // 設定ファイルの確認ボタン押下
+                case "設定ファイルの確認":
+                    break;
+                // ファイルリストの比較ボタン押下
+                case "ファイルリストの比較":
+                    break;
+                // 終了ボタン押下
+                case "終了":
+                    break;
+            }
+        }
     }
 }

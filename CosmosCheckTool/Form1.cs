@@ -50,17 +50,29 @@ namespace CosmosCheckTool
             // ボタン押下発生元オブジェクトのテキストプロパティによって処理を決定
             switch (((Button)sender).Text)
             {
-                // データ作成ボタン押下
+                // □データ作成ボタン押下
                 case "データ作成":
+                    // TODO:
+                    MessageBox.Show("データ作成ボタン押下");
+                    // 抜け
                     break;
-                // 設定ファイルの確認ボタン押下
+                // □設定ファイルの確認ボタン押下
                 case "設定ファイルの確認":
+                    // 
+                    new Form2().ShowDialog();
+                    // 抜け
                     break;
-                // ファイルリストの比較ボタン押下
+                // □ファイルリストの比較ボタン押下
                 case "ファイルリストの比較":
+                    // TODO:
+                    MessageBox.Show("ファイルリストの比較ボタン押下");
+                    // 抜け
                     break;
-                // 終了ボタン押下
+                // □終了ボタン押下
                 case "終了":
+                    // TODO:
+                    MessageBox.Show("終了ボタン押下");
+                    // 抜け
                     break;
             }
         }

@@ -14,7 +14,7 @@ namespace CosmosCheckTool
     public partial class Form2 : Form
     {
         /// <summary>
-        /// コンストラクタ(設定ファイルの確認機能の設定画面)
+        /// コンストラクタ
         /// </summary>
         public Form2()
         {
@@ -55,7 +55,8 @@ namespace CosmosCheckTool
                     // 確認ダイアログにてYesが選択された場合
                     if (MessageBox.Show("以下のフォルダのチェック処理を開始します。\nよろしいですか？\n\n" + textBox1.Text, "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        // TODO:比較結果画面表示
+                        // TODO:
+                        new Form3() { CosmosDir = textBox1.Text }.ShowDialog();
                     }
                     // 抜け
                     break;

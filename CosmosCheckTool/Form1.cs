@@ -19,7 +19,7 @@ namespace CosmosCheckTool
         public static string OutPath;
 
         /// <summary>
-        /// コンストラクタ(初期画面)
+        /// コンストラクタ
         /// </summary>
         public Form1()
         {

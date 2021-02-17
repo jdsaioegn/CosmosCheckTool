@@ -29,39 +29,39 @@ namespace CosmosCheckTool.model
         /// 検索タグ情報リスト
         /// </summary>
         public List<XmlInfo> XmlInfos { get; set; }
-    }
 
-    /// <summary>
-    /// ファイル情報
-    /// </summary>
-    public class FileInfo
-    {
         /// <summary>
-        /// ファイル名
+        /// ファイル情報
         /// </summary>
-        public string FileName { get; set; }
-        /// <summary>
-        /// ファイルフルパス
-        /// </summary>
-        public string FilePath { get; set; }
-    }
+        public class FileInfo
+        {
+            /// <summary>
+            /// ファイル名
+            /// </summary>
+            public string FileName { get; set; }
+            /// <summary>
+            /// ファイルフルパス
+            /// </summary>
+            public string FilePath { get; set; }
+        }
 
-    /// <summary>
-    /// 検索タグ情報
-    /// </summary>
-    public class XmlInfo
-    {
         /// <summary>
-        /// 検索操作
+        /// 検索タグ情報
         /// </summary>
-        public string Operation { get; set; }
-        /// <summary>
-        /// 検索タグ
-        /// </summary>
-        public string ChangeData { get; set; }
-        /// <summary>
-        /// 検証タグ
-        /// </summary>
-        public string SearchXmlNode { get; set; }
+        public class XmlInfo
+        {
+            /// <summary>
+            /// 検索操作
+            /// </summary>
+            public string Operation { get; set; }
+            /// <summary>
+            /// 検索タグ
+            /// </summary>
+            public string ChangeData { get; set; }
+            /// <summary>
+            /// 検証タグ
+            /// </summary>
+            public string SearchXmlNode { get; set; }
+        }
     }
 }
